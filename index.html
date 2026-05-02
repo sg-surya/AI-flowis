@@ -211,6 +211,23 @@
     }
     .footer strong { color: var(--primary); }
 
+    /* WATERMARK */
+    .watermark {
+      position: fixed;
+      bottom: 50%;
+      right: 20px;
+      transform: rotate(-90deg) translateX(50%);
+      transform-origin: right bottom;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(79, 70, 229, 0.15);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 1000;
+    }
+
     /* RESPONSIVE FIXES */
     @media (max-width: 1200px) {
       body { flex-direction: column; overflow-y: auto; }
@@ -260,7 +277,7 @@
 
   <div class="footer">
     <i data-lucide="terminal" size="18"></i>
-    <a href ="https://vasudev.online"><span>Build By <strong>Surya Pratap Singh (B25BS1545)</strong> By Vasudev AI</span></a>
+    <span>Build By <strong>Surya Pratap Singh (B25BS1545)</strong></span>
   </div>
 
   <script type="module">
@@ -298,5 +315,7 @@
     }
     lucide.createIcons();
   </script>
+
+  <div class="watermark">Surya Pratap Singh (Vasudev AI)</div>
 </body>
 </html>
